@@ -1,0 +1,34 @@
+{
+    "plugins\/datatransfert\/desktop\/php\/datatransfert.php": {
+        "Ajouter un équipement": "Ajouter un équipement",
+        "Rechercher": "Rechercher",
+        "Mes équipements datatransfert": "Mes équipements datatransfert",
+        "Général": "Général",
+        "Nom de l'équipement": "Nom de l'équipement",
+        "Objet parent": "Objet parent",
+        "Aucun": "Aucun",
+        "Activer": "Activer",
+        "Visible": "Visible",
+        "Type": "Type",
+        "Paramètres": "Paramètres",
+        "Data transfert": "Data transfert",
+        "Ajouter une commande Data transfert": "Ajouter une commande Data transfert",
+        "Nom de la commande": "Nom de la commande",
+        "Chemin source": "Chemin source",
+        "Chemin cible": "Chemin cible",
+        "Filtrage": "v",
+        "Supprimer": "Supprimer",
+        "Sauvegarder": "Sauvegarder"
+    },
+    "plugins\/datatransfert\/desktop\/js\/datatransfert.js": {
+        "Source": "Source",
+        "Cible": "Cible",
+        "Filtre sur fichier": "Filtre sur fichier",
+        "X fichiers les plus recent": "X fichiers les plus recent",
+        "Tester": "Tester"
+    },
+    "plugins\/datatransfert\/plugin_info\/info.xml": {
+        "Plugin pour transferer de fichiers": "Plugin pour transferer de fichiers",
+        "Pour activer le sftp : sudo apt-get install libssh2-php": "Pour activer le sftp : sudo apt-get install libssh2-php"
+    }
+}

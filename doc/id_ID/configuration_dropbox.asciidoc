@@ -1,0 +1,122 @@
+:imagesdir: ../images
+:experimental:
+:linkattrs:
+
+
+=== DropBox
+
+==== Prérequis
+
+Pour effectuer un transfert sur un compte DropBox, il est nécessaire de créer une "Application DropBox".
+
+Connectez-vous avec votre compte DropBox sur le site : https://www.dropbox.com/developers/apps
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Votre compte Dropbox |Création d'une APP
+
+|image:datatrasnfert_dropbox01.png[role="related thumb left",width=400]
+|Pour effectuer un transfert sur un compte DropBox, il est nécessaire de créer une "Application DropBox".
+{nbsp} +
+Connectez-vous avec votre compte DropBox sur le site : https://www.dropbox.com/developers/apps
+{nbsp} +
+Choisir : *Dropbox API app*
+{nbsp} +
+Spécifier : *Le nom de votre app* (information nécessaire dans la configuration du plugin)
+{nbsp} +
+{nbsp} +
+Cliquer sur image:datatrasnfert_dropbox02.png[width=80,role="img-thumbnail"]
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Votre compte Dropbox |Générer votre token
+|image:datatrasnfert_dropbox03.png[role="related thumb left",width=400]
+|Dans les paramêtres de votre application.
+{nbsp} +
+Dans l'onglet *Settings*
+{nbsp} +
+Dans la section *OAuth 2*
+{nbsp} +
+Générer votre token *Generated access token* (information nécessaire dans la configuration du plugin)
+|===
+
+==== Configuration du plugin / Dropbox
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Choix du protocol
+|image:datatrasnfert_dropbox04.png[role="related thumb left",width=400]
+|Nom de l'équipement Data transfert : nommer ou renommer votre équipement
+{nbsp} +
+Objet parent : définir la localisation de votre équipement dans l'arborescence de vos objets
+{nbsp} +
+image:datatrasnfert_dropbox05.png[width=80,role="img-thumbnail"] : rendre actif l'équipement (*Oui*/Non)
+{nbsp} +
+image:datatrasnfert_dropbox06.png[width=80,role="img-thumbnail"] : rendre visible l'équipement (*Oui*/Non)
+{nbsp} +
+Choisir votre protocol : *dropbox*/ftp/local/sftp/webdav
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Paramêtres Dropbox
+|image:datatrasnfert_dropbox07.png[role="related thumb left",width=400]
+|Token : recopier le token de votre "Application Dropbox" précédement généré.
+{nbsp} +
+Nom de l'application : saisir le nom de l'application Dropbox créée dans la section pré-requis.
+{nbsp} +
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Paramêtres Dropbox
+|image:datatrasnfert_dropbox08.png[role="related thumb left",width=400]
+|Cliquer sur image:datatrasnfert_dropbox09.png[role="img-thumbnail"]
+{nbsp} +
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox10.png[role="related thumb left",width=400]
+|Nom : définir le nom de votre commande.
+Dans l'exemple *Backup*.
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox11.png[role="related thumb left",width=400]
+|_Source_ : définir le répertoire cible qui contient les fichiers à copier. Dans notre exemple /usr/share/nginx/www/jeedom/tmp/DataTransfert/
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox12.png[role="related thumb left",width=400]
+|_Cible_ :définir le répertoire destination où seront copié les fichiers. Dans notre exemple : /DataTransfert/
+{nbsp} +
+{nbsp} +
+*Nota* : Les fichiers seront localisés dans votre Dropbox dans le répertoire Dropbox > Applications > "Non de votre APP" > "Répertoire cible"
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox13.png[role="related thumb left",width=400]
+|_Filtre sur fichier_ : définir le nom ou l'extension des fichiers à copier
+{nbsp} +
+_X fichiers les plus récents_ : définir le nombre de fichier / filtre "filtre sur fichier" qui seront copiés.
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox14.png[role="related thumb left",width=400]
+| Tester : avant d'automatiser ou de publier sur votre dashboard votre équipement _Data Transfer_ tester le bon fonctionnement avec le bouton *Tester*
+|===

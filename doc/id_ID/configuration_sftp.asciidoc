@@ -1,0 +1,53 @@
+:imagesdir: ../images
+:experimental:
+:linkattrs:
+
+
+=== Local
+
+==== Prérequis
+
+Il n'y a pas de prérequis pour la mise en place du Data Transfert en sftp.
+{nbsp} +
+Vérifier néanmoins le bon fonctionnement du sftp en vous connectant à partir de votre jeedom en effectuant la commande suivante :
+{nbsp} +
+sftp utilisateur@serveur (ex sftp jeedom@192.168.0.100).
+
+
+==== Configuration du plugin / sftp
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Choix du protocol
+|image:datatrasnfert_sftp01.png[role="related thumb left",width=400]
+|Nom de l'équipement Data transfert : nommer ou renommer votre équipement
+{nbsp} +
+Objet parent : définir la localisation de votre équipement dans l'arborescence de vos objets
+{nbsp} +
+image:datatrasnfert_dropbox05.png[width=80,role="img-thumbnail"] : rendre actif l'équipement (*Oui*/Non)
+{nbsp} +
+image:datatrasnfert_dropbox06.png[width=80,role="img-thumbnail"] : rendre visible l'équipement (*Oui*/Non)
+{nbsp} +
+Choisir votre protocol : dropbox/ftp/local/*sftp*/webdav
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Paramêtres sftp
+|image:datatrasnfert_sftp03.png[role="related thumb left",width=400]
+|*Serveur* : spécifier le nom DNS ou l'adresse IP de votre serveur sftp.
+{nbsp} +
+*Port* : spécifier le port sftp de connexion. 22 port sftp par défaut.
+{nbsp} +
+*Nom de l'uilisateur* : spécifier le nom de l'utilisateur sftp utilisé pour la connexion. Utiliser un compte spécifique avec les droits nécessires (droits d'écriture dans le dossier cible du serveur sftp)
+{nbsp} +
+*Mot de passe* : mot de passe de votre utilisateur sftp.
+{nbsp} +
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin
+|image:datatrasnfert_sftp02.png[role="related thumb left",width=800]
+Exemple de commande
+|===

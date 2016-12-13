@@ -1,0 +1,108 @@
+:imagesdir: ../images
+:experimental:
+:linkattrs:
+
+=== ftp
+
+==== Prérequis
+
+Avant de procéder à la configuration du plugin, vérifier les paramêtres de connexion au serveur ftp.
+
+Il est nécessaire de disposer des informations de connexion suivantes :
+
+* IP ou DNS du serveur ftp (interne ou externe)
+* du port de connexion (https://fr.wikipedia.org/wiki/File_Transfer_Protocol_Secure)
+* du nom de l'utilisateur ftp
+* du mot de passe de l'utilisateur ftp
+* SSL (oui/non) (le SSL apporte le chiffrement de la donnée)
+* mode de connexion (actif/passif)
+
+Vérifier ces paramêtres avec un client de type FileZilla (https://filezilla-project.org/)
+
+
+==== Configuration du plugin / ftp
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Choix du protocol
+|image:datatrasnfert_ftp01.png[role="related thumb left",width=400]
+|*Nom de l'équipement Data transfert* : nommer ou renommer votre équipement
+{nbsp} +
+*Objet parent* : définir la localisation de votre équipement dans l'arborescence de vos objets
+{nbsp} +
+image:datatrasnfert_dropbox05.png[width=80,role="img-thumbnail"] : rendre actif l'équipement (*Oui*/Non)
+{nbsp} +
+image:datatrasnfert_dropbox06.png[width=80,role="img-thumbnail"] : rendre visible l'équipement (*Oui*/Non)
+{nbsp} +
+Choisir votre protocol : dropbox/*ftp*/local/sftp/webdav
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Paramêtres Dropbox
+|image:datatrasnfert_ftp02.png[role="related thumb left",width=400]
+|*Serveur* : spécifier le nom DNS ou l'adresse IP de votre serveur ftp.
+{nbsp} +
+*Port* : spécifier le port ftp de connexion. 21 correspond au port ftp sans chiffrement.
+{nbsp} +
+*Nom de l'uilisateur* : spécifier le nom de l'utilisateur ftp utilisé pour la connexion. Utiliser un compte spécifique avec les droits nécessires (droits d'écriture dans le dossier cible du serveur ftp)
+{nbsp} +
+*Mot de passe* : mot de passe de votre utilisateur ftp.
+{nbsp} +
+*SSL* : activer le chiffrement de la connexion ftp. Doit être en relation avec le numéro de port ftp spécifié plus haut.
+{nbsp} +
+*Passif* : Définir le mode de connexion actif/passif. Vous avez précédement validé votre mode de connexion avec un client ftp (FileZilla).
+{nbsp} +
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Paramêtres Dropbox
+|image:datatrasnfert_dropbox08.png[role="related thumb left",width=400]
+|Cliquer sur image:datatrasnfert_dropbox09.png[role="img-thumbnail"]
+{nbsp} +
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox10.png[role="related thumb left",width=400]
+|Nom : définir le nom de votre commande.
+Dans l'exemple *Backup*.
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox11.png[role="related thumb left",width=400]
+|_Source_ : définir le répertoire cible qui contient les fichiers à copier. Dans notre exemple /usr/share/nginx/www/jeedom/tmp/DataTransfert/
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox12.png[role="related thumb left",width=400]
+|_Cible_ :définir le répertoire destination où seront copié les fichiers. Dans notre exemple : /DataTransfert/
+{nbsp} +
+{nbsp} +
+*Nota* : Les fichiers seront localisés dans votre Dropbox dans le répertoire Dropbox > Applications > "Non de votre APP" > "Répertoire cible"
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox13.png[role="related thumb left",width=400]
+|_Filtre sur fichier_ : définir le nom ou l'extension des fichiers à copier
+{nbsp} +
+_X fichiers les plus récents_ : définir le nombre de fichier / filtre "filtre sur fichier" qui seront copiés.
+|===
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Commande Data transfert
+|image:datatrasnfert_dropbox14.png[role="related thumb left",width=400]
+| Tester : avant d'automatiser ou de publier sur votre dashboard votre équipement _Data Transfer_ tester le bon fonctionnement avec le bouton *Tester*
+|===

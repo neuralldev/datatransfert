@@ -1,0 +1,11 @@
+:toc: macro
+:toc-placement: preamble
+
+= Data Transfert
+
+Plugin permettant de transférer des données (ex : video après detection d'une intrusion, sauvegardes...) sur des serveurs distants au moyen des protocoles FTP, SFTP ou WebDav, mais aussi sur Dropbox ou en local.
+
+== Configuration
+include::configuration.asciidoc[]
+
+include::faq.asciidoc[]

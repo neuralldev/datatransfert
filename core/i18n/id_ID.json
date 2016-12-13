@@ -1,0 +1,34 @@
+{
+    "plugins/datatransfert/desktop/php/datatransfert.php": {
+        "Ajouter un équipement": "Tambahan peralatan",
+        "Rechercher": "Mencari",
+        "Mes équipements datatransfert": "Peralatanku datatransfert",
+        "Général": "Umum",
+        "Nom de l'équipement Data transfert": "Nom de l'équipement Data transfert",
+        "Objet parent": "Objek induk",
+        "Aucun": "Tak ada",
+        "Activer": "Mengaktifkan",
+        "Visible": "Terlihat",
+        "Type": "Jenis",
+        "Paramètres": "Parameter²",
+        "Data transfert": "Data transfert",
+        "Ajouter une commande Data transfert": "Ajouter une commande Data transfert",
+        "Nom": "Nama",
+        "Source": "Source",
+        "Cible": "Cible",
+        "Filtre": "Filtre",
+        "Supprimer": "Menghapus",
+        "Sauvegarder": "Menyimpan"
+    },
+    "plugins/datatransfert/desktop/js/datatransfert.js": {
+        "Source": "Source",
+        "Cible": "Cible",
+        "Filtre sur fichier": "Filtre sur fichier",
+        "X fichiers les plus recent": "X fichiers les plus recent",
+        "Tester": "Coba"
+    },
+    "plugins/datatransfert/plugin_info/info.xml": {
+        "Plugin pour transferer de fichiers": "Plugin untuk mentransfer file",
+        "Pour activer le sftp : sudo apt-get install libssh2-php": "Aktifan sftp : sudo apt-get install libssh2-php"
+    }
+}

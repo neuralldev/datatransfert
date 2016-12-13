@@ -1,0 +1,4 @@
+== FAQ
+
+Je n’arrive pas à faire marcher un transfert FTP.::
+Assurez vous d’avoir mis les bonnes options (en particulier au niveau du SSL)

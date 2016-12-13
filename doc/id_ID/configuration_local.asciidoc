@@ -1,0 +1,36 @@
+:imagesdir: ../images
+:experimental:
+:linkattrs:
+
+
+=== Local
+
+==== Prérequis
+
+Il n'y a pas de prérequis pour la mise en place du Data Transfert local. Néanmoins être vigilent sut l'espace disque utilisé.
+
+
+==== Configuration du plugin / local
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin |Choix du protocol
+|image:datatrasnfert_local01.png[role="related thumb left",width=400]
+|Nom de l'équipement Data transfert : nommer ou renommer votre équipement
+{nbsp} +
+Objet parent : définir la localisation de votre équipement dans l'arborescence de vos objets
+{nbsp} +
+image:datatrasnfert_dropbox05.png[width=80,role="img-thumbnail"] : rendre actif l'équipement (*Oui*/Non)
+{nbsp} +
+image:datatrasnfert_dropbox06.png[width=80,role="img-thumbnail"] : rendre visible l'équipement (*Oui*/Non)
+{nbsp} +
+Choisir votre protocol : dropbox/ftp/*local*/sftp/webdav
+|===
+
+
+[options="header,autowidth",role="text-justify"]
+|===
+|Configuration du plugin
+|image:datatrasnfert_local02.png[role="related thumb left",width=800]
+Exemple de commande
+|===
